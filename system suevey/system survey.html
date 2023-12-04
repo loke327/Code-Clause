@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ssstyles.css">
+    <title>Survey System</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Survey System</h1>
+        <form id="surveyForm">
+            <!-- Questions go here -->
+            <div class="question">
+                <label for="q1">Question 1: What is your favorite color?</label>
+                <input type="text" id="q1" name="q1" required>
+            </div>
+            
+            <div class="question">
+                <label for="q2">Question 2: How likely are you to recommend our service to others?</label>
+                <select id="q2" name="q2" required>
+                    <option value="very-likely">Very Likely</option>
+                    <option value="likely">Likely</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="unlikely">Unlikely</option>
+                    <option value="very-unlikely">Very Unlikely</option>
+                </select>
+            </div>
+            
+            <!-- Add more questions as needed -->
+
+            <button type="button" onclick="submitSurvey()">Submit Survey</button>
+        </form>
+    </div>
+    
+    <script src="ssscript.js"></script>
+</body>
+</html>
